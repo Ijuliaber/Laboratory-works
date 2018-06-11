@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexander/juliber_project/lab 6/complex.cpp
+complex.h
+/home/alexander/juliber_project/lab 6/complex.h
+cmath
+-
+
+/home/alexander/juliber_project/lab 6/complex.h
+iostream
+-
+
+/home/alexander/juliber_project/lab 6/main.cpp
+iostream
+-
+complex.h
+/home/alexander/juliber_project/lab 6/complex.h
+
