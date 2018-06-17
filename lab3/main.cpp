@@ -11,11 +11,11 @@ int main() {
     c.print();
 
     matrix f;
-    f.matrix_from_file("/home/alexander/juliber_project/lab3/test.txt");
+    f.matrix_from_file("/Users\julib\Desktop/juliber_project/lab3/test.txt");
     f.print();
 
 /*
-    std::ifstream file("/home/alexander/juliber_project/lab3/test.txt");
+    std::ifstream file("/Users\julib\Desktop/juliber_project/lab3/test.txt");
     file.open("test.txt");
     if(file.is_open())
     {
