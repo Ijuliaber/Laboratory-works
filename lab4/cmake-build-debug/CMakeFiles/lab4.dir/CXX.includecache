@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexander/juliber_project/lab4/matrix.hpp
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+
+/home/alexander/juliber_project/lab4/test.cpp
+iostream
+-
+exception
+-
+matrix.hpp
+/home/alexander/juliber_project/lab4/matrix.hpp
+

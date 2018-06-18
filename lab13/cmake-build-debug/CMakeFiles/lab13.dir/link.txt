@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab13.dir/main.cpp.o CMakeFiles/lab13.dir/my_string.cpp.o  -o lab13 

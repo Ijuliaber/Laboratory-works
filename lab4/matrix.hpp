@@ -17,21 +17,21 @@ private:
 
 public:
     matrix()
-        : rows_count(0)
-        , cols_count(0)
-        , matrix_data(0)
+            : rows_count(0)
+            , cols_count(0)
+            , matrix_data(0)
     {}
 
     matrix(size_type rows, size_type cols, value_type default_value = 0)
-        : rows_count(rows)
-        , cols_count(cols)
-        , matrix_data(rows_count * cols_count, default_value)
+            : rows_count(rows)
+            , cols_count(cols)
+            , matrix_data(rows_count * cols_count, default_value)
     {}
 
     matrix(size_type rows, size_type cols, std::vector<value_type> & data)
-        : rows_count(rows)
-        , cols_count(cols)
-        , matrix_data(data)
+            : rows_count(rows)
+            , cols_count(cols)
+            , matrix_data(data)
     {}
 
     ~matrix() = default;
@@ -110,6 +110,7 @@ public:
                     return;
                 }
 
+
                 for (size_type i = 0; i < number.size(); ++i) {
                     matrix_data.push_back(atoi(number[i].c_str()));
                 }
@@ -117,6 +118,11 @@ public:
             }
         }
         file.close();
+    }
+
+    bool operator==(const matrix & other )
+    {
+        return rows_count == other.rows_count && cols_count == other.cols_count && matrix_data == other.matrix_data;
     }
 
     friend matrix operator+(const matrix& a, const matrix& b)
@@ -145,7 +151,7 @@ public:
 private:
     std::vector<std::string> split(const std::string & line)
     {
-        std::vector<std::string> parsed_line;
+        std::vector<std::string> parsedLine;
         std::string word;
 
         for(size_type i = 0; i < line.size(); ++i) {
@@ -153,7 +159,7 @@ private:
             {
                 if (!word.empty())
                 {
-                    parsed_line.push_back(word);
+                    parsedLine.push_back(word);
                     word.clear();
                 }
             } else {
@@ -162,7 +168,7 @@ private:
         }
 
         if(!word.empty())
-            parsed_line.push_back(word);
-        return parsed_line;
+            parsedLine.push_back(word);
+        return parsedLine;
     }
 };

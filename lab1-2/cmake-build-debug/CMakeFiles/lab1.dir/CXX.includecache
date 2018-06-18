@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexander/juliber_project/lab1/main.cpp
+iostream
+-
+size_type.hpp
+/home/alexander/juliber_project/lab1/size_type.hpp
+
+/home/alexander/juliber_project/lab1/size_type.hpp
+iostream
+-
+

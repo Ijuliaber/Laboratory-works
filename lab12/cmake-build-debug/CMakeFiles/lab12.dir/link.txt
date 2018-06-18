@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab12.dir/insertion_sort.cpp.o  -o lab12 

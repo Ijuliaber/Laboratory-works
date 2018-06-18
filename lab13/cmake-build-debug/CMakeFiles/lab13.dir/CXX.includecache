@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexander/juliber_project/lab13/main.cpp
+iostream
+-
+my_string.hpp
+/home/alexander/juliber_project/lab13/my_string.hpp
+
+/home/alexander/juliber_project/lab13/my_string.cpp
+my_string.hpp
+/home/alexander/juliber_project/lab13/my_string.hpp
+
+/home/alexander/juliber_project/lab13/my_string.hpp
+iostream
+-
+
